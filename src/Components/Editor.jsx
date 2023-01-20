@@ -5,7 +5,7 @@ import { ContentEditable } from "@lexical/react/LexicalContentEditable";
 import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin";
 import { AutoFocusPlugin } from "@lexical/react/LexicalAutoFocusPlugin";
 import LexicalErrorBoundary from "@lexical/react/LexicalErrorBoundary";
-import TreeViewPlugin from "./plugins/TreeViewPlugin";
+// import TreeViewPlugin from "./plugins/TreeViewPlugin";
 import ToolbarPlugin from "./plugins/ToolbarPlugin";
 import { HeadingNode, QuoteNode } from "@lexical/rich-text";
 import { TableCellNode, TableNode, TableRowNode } from "@lexical/table";
@@ -20,6 +20,7 @@ import { TRANSFORMERS } from "@lexical/markdown";
 import ListMaxIndentLevelPlugin from "./plugins/ListMaxIndentLevelPlugin";
 import CodeHighlightPlugin from "./plugins/CodeHighlightPlugin";
 import AutoLinkPlugin from "./plugins/AutoLinkPlugin";
+import ActionsPlugin from "./plugins/ActionsPlugin.tsx"
 
 function Placeholder() {
   return <div className="editor-placeholder">Enter some rich text...</div>;
@@ -44,8 +45,8 @@ const editorConfig = {
     TableCellNode,
     TableRowNode,
     AutoLinkNode,
-    LinkNode
-  ]
+    LinkNode,
+  ],
 };
 
 export default function Editor() {
@@ -69,6 +70,7 @@ export default function Editor() {
           <ListMaxIndentLevelPlugin maxDepth={7} />
           <MarkdownShortcutPlugin transformers={TRANSFORMERS} />
         </div>
+        <ActionsPlugin />
       </div>
     </LexicalComposer>
   );

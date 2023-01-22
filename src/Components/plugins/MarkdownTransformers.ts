@@ -1,4 +1,4 @@
-import type { ElementTransformer, Transformer } from "@lexical/markdown";
+/* import type { ElementTransformer, Transformer } from "@lexical/markdown";
 import type { LexicalNode } from "lexical";
 
 import {
@@ -38,4 +38,4 @@ export const PLAYGROUND_TRANSFORMERS: Array<Transformer> = [
   ...ELEMENT_TRANSFORMERS,
   ...TEXT_FORMAT_TRANSFORMERS,
   ...TEXT_MATCH_TRANSFORMERS
-];
+]; */

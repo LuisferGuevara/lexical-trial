@@ -20,7 +20,8 @@ import { TRANSFORMERS } from "@lexical/markdown";
 import ListMaxIndentLevelPlugin from "./plugins/ListMaxIndentLevelPlugin";
 import CodeHighlightPlugin from "./plugins/CodeHighlightPlugin";
 import AutoLinkPlugin from "./plugins/AutoLinkPlugin";
-import ActionsPlugin from "./plugins/ActionsPlugin.tsx"
+import ActionsPlugin from "./plugins/ActionsPlugin";
+
 
 function Placeholder() {
   return <div className="editor-placeholder">Enter some rich text...</div>;
